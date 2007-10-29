@@ -31,7 +31,7 @@ li {
 }
 
 .header {
-  min-height: calc(80vh - 4rem);
+  min-height: 100%;
   margin-bottom: 5rem;
 }
 
@@ -39,6 +39,9 @@ li {
   .header {
     background: -webkit-gradient(linear, left top, right top, from(rgba(253, 114, 1, 0.3)), to(rgba(241, 39, 17, 0.3))), url("../img/header-bg.png");
     background: linear-gradient(90deg, rgba(253, 114, 1, 0.3), rgba(241, 39, 17, 0.3)), url("../img/header-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
@@ -326,6 +329,14 @@ li {
   line-height: 122.5%;
   /* or 1.25rem */
   color: #454545;
+}
+
+@media screen and (max-width: 992px) {
+  .adventures {
+    padding: 0 3rem;
+    min-height: 100%;
+    margin-bottom: 5rem;
+  }
 }
 
 @media screen and (max-width: 945px) {

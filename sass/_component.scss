@@ -1,17 +1,21 @@
 .header {
+
+    min-height: 100%;
+    margin-bottom: 5rem;
+
     @media screen and (max-width: 945px){
         background:linear-gradient(90deg, rgba(#fd7201, .3), rgba(#f12711, .3)), url('../img/header-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: grid;
         align-items: center;
         align-content: center;
         padding-right: 5vw;
         padding-left: 5vw;
         color: #fff;
-        // justify-content: center;
         min-height: calc(100vh - 5rem);
     }
-    min-height: calc(80vh - 4rem);
-    margin-bottom: 5rem;
 
     &__text {
         padding-left: 5vw;
@@ -257,6 +261,12 @@
 }
 
 .adventures {
+    @media screen and (max-width: 992px){
+        // font-size: 80%;
+        padding: 0 3rem;
+        min-height: 100%;
+        margin-bottom: 5rem;
+    }
     @media screen and (max-width: 945px){
         // font-size: 80%;
         padding: 0 3rem;
