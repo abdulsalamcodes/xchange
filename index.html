@@ -1,43 +1,461 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!-- Reynolds @elcozy  -->
+  <!-- Reynolds @elcozy  -->
 
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS for Easy Scroll Dots -->
-    <link href="./css/easyScrollDots.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/img/neon.jpeg">
+    <link href="./css/easyScrollDots.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/img/neon.jpeg" />
 
     <!-- Animate on Scroll CSS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/stylee2.css">
-</head>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="body-wrapper">
 
-    <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1500"> I am a
-        gg fdsbeneta
-        bsetntne</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="" /> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Stories <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Podcasts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">City Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xchange life</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">On Display</a>
+            </li>
+          </ul>
+          
+          <div class="search">
+            <svg class="search__icon">
+              <use xLink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+          </div>
+          
+          <nav class="user-nav">
+            <div class="user-nav__item">
+              <img src="./img/user.svg" alt="user icon" class="user-nav__icon">
+              <span class="user-nav__text">Accounts</span>
+            </div>
+            <div class="user-nav__item">
+              <img src="./img/shopping-cart.svg" alt="cart icon" class="user-nav__icon">
+              <span class="user-nav__text">Cart</span>
+            </div>
+            <div class="user-nav__item">
+              <img src="./img/bookmark.svg" alt="bookmark icon" class="user-nav__icon">
+              <span class="user-nav__text">Saved</span>
+            </div>
+            <div class="user-nav__item">
+              <img src="./img/map-pin.svg" alt="map icon" class="user-nav__icon">
+              <span class="user-nav__text">Tracking</span>
+            </div>
+        </nav>
+        </div>
+      </nav>
+  
+      <header class="header mt-4">
+  
+        <div class="row align-items-center">
+  
+          <div class="col-lg-4 header__text">
+            <h1 class="heading-1">
+              Venture <span class="ital">Forte,</span> <br />
+              Go boldly!
+            </h1>
+            <p class="para">
+              Discover the most amazing stories, music, lifestyle and much more on
+              Xchange!
+            </p>
+            <a href="#" class="btn">BECOME A MEMBER</a>
+          </div>
+    
+          <div class="header__aside col-lg-8">
+            <div class="wrapper">
+              <img src="./img/header-bg.png" alt="" class="image-fluid header-img">
+            </div>
+            <div class="card header-card">
+              <span class="label">Fashion</span>
+              <h2 class="heading-2">Completely steezy outfit that makes you stay fly</h2>
+              <p class="para">
+                We believe the only thing we truly own is our story.
+              </p>
+              <footer class="date">September 9, 2019</footer>
+            </div>
+          </div>
+  
+        </div>
+      </header>
+  
+      <section class="categories my-5">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="newsletter-box">
+              <h2 class="heading-2">Get the Xchange Advantage</h2>
+              <p class="para">
+                Get access to curated experiences and special benefits spanning
+                across all areas of lifestyle.
+              </p>
+  
+              <form action="#" class="d-flex newsletter-box__form">
+                <input type="text" name="name" id="" placeholder="Your name" class="input" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email address" class="input"
+                />
+                <button type="submit" class="newsletter-box__submit">
+                  <img src="./img/send.svg" alt="send icon">
+                </button>
+              </form>
+            </div>
+          </div>
+  
+          <div class="col-md-8">
+            <div class="items">
+              <article class="card">
+                <span class="category__label">Fashion</span>
+                <h3 class="heading-3">
+                  Designer of the month: Bosun-Jones Blazing
+                </h3>
+                <p class="para">
+                  We believe the only thing we truly own is our story.
+                </p>
+                <footer class="date">September 9, 2019</footer>
+              </article>
+              <article class="card">
+                <span class="category__label">Lifestyle</span>
+                <h3 class="heading-3">
+                  Designer of the month: Bosun-Jones Blazing
+                </h3>
+                <p class="para">
+                  We believe the only thing we truly own is our story.
+                </p>
+                <footer class="date">September 9, 2019</footer>
+              </article>
+              <article class="card">
+                <span class="category__label">Fashion</span>
+                <h3 class="heading-3">
+                  Designer of the month: Bosun-Jones Blazing
+                </h3>
+                <p class="para">
+                  We believe the only thing we truly own is our story.
+                </p>
+                <footer class="date">September 9, 2019</footer>
+              </article>
+              <article class="card">
+                <span class="category__label">lifestyle</span>
+                <h3 class="heading-3">
+                  Designer of the month: Bosun-Jones Blazing
+                </h3>
+                <p class="para">
+                  We believe the only thing we truly own is our story.
+                </p>
+                <footer class="date">September 9, 2019</footer>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+  
+      <section class="adventures mb-2 mt-5">
+      
+
+        <div class="row">
+          <div class="col-lg-4">hey</div>
+  
+          <div class="col-lg-8">
+
+            <div class="">
+              <header class="featured__heading">
+                <h1 class="heading-1">
+                  Adventure without <br />
+                  boundaries
+                </h1>
+                <a href="#" class="btn">More stories</a>
+
+              </header>
+              <div class="col adventure__featured adventure__story">
+                <div class="adventure__header">
+                  <img
+                    src="./img/cover-image.png"
+                    class="image-fluid"
+                    alt="image"
+                    class="adventure__featured--img"
+
+                  />
+                  <span class="adventure__title">Travel</span>
+                </div>
+                <span class="date adventure__date ">10TH SEPT, 2019</span>
+                <h3 class="heading-3 adventure__text">Completely steezy outfit that makes you stay fly</h3>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-6 adventure__story">
+                <div class="adventure__header">
+                  <img
+                    src="./img/cover-image.png"
+                    class="image-fluid"
+                    alt="image"
+                  />
+                  <span class="adventure__title">Travel</span>
+                </div>
+                <span class="date adventure__date ">10TH SEPT, 2019</span>
+                <h3 class="heading-3 adventure__text">Completely steezy outfit that makes you stay fly</h3>
+              </div>
+
+              <div class="col-md-6 adventure__story">
+                <div class="adventure__header">
+                  <img
+                    src="./img/cover-image.png"
+                    class="image-fluid"
+                    alt="image"
+                  />
+                  <span class="adventure__title">Travel</span>
+                </div>
+                <span class="date adventure__date">10TH SEPT, 2019</span>
+                <h3 class="heading-3  adventure__text">Completely steezy outfit that makes you stay fly</h3>
+              </div>
+
+              <div class="col-md-6 adventure__story">
+                <div class="adventure__header">
+                  <img
+                    src="./img/cover-image.png"
+                    class="image-fluid"
+                    alt="image"
+                  />
+                  <span class="adventure__title">Travel</span>
+                </div>
+                <span class="date adventure__date ">10TH SEPT, 2019</span>
+                <h3 class="heading-3 adventure__text">Completely steezy outfit that makes you stay fly</h3>
+              </div>
+              <div class="col-md-6 adventure__story">
+                <div class="adventure__header">
+                  <img
+                    src="./img/cover-image.png"
+                    class="image-fluid"
+                    alt="image"
+                  />
+                  <span class="adventure__title">Travel</span>
+                </div>
+                <span class="date  adventure__date">10TH SEPT, 2019</span>
+                <h3 class="heading-3 adventure__text">Completely steezy outfit that makes you stay fly</h3>
+              </div>
+  
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="video-display text-center">
+        <div class="video-display__heading container mt-5 mb-3">
+          <h4 class="heading-4 mr-auto">Videos</h4>
+          <a href="#" class="btn ">More Videos</a>
+        </div>
+        
+        <div class="container">
+          <video controls poster="./img/video-preview.png" class="video">
+            <source src="movie.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+  
+        <!-- Carousels -->
+        <div></div>
+      </section>
+  
+      <section class="join text-center">
+        <h1 class="heading-1">
+          Join the Xchange <br />
+          Luxury Club
+        </h1>
+  
+        <p class="para">
+          We believe the only thing we truly own is our story. <br />
+          That time is our most precious asset.
+        </p>
+  
+        <a href="" class="btn btn-lg">Become a member</a>
+      </section>
+  
+      <section class="footer-cta">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="text col-md-6">
+              <h2 class="heading-2">Xchange on the go!</h2>
+              <p class="para">
+                We work to support our members in their <br />
+                busy lives by providing.
+              </p>
+              <div class="download">
+                <a href="#"
+                  ><img
+                    src="./img/play-store.png"
+                    alt="#"
+                    class="image-fluid download__btn"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./img/apple-store.png"
+                    alt="#"
+                    class="image-fluid download__btn"
+                /></a>
+              </div>
+            </div>
+  
+            <div class="mockup-images col-md-6">
+              <img
+                src="./img/mockup.png"
+                alt="mockup"
+                class="image-fluid mockup"
+              />
+              <img
+                src="./img/mockup.png"
+                alt="mockup"
+                class="image-fluid mockup mockup-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer class="footer">
+        <div class="footer__wrapper container">
+          <nav class="footer__nav">
+            <h3 class="heading">Navigation</h3>
+            <ul>
+              <li><a href="#" class="footer-link">Home </a></li>
+              <li><a href="#" class="footer-link">Stories </a></li>
+              <li><a href="#" class="footer-link">Videos </a></li>
+              <li><a href="#" class="footer-link">Podcasts </a></li>
+              <li><a href="#" class="footer-link">City guide </a></li>
+              <li><a href="#" class="footer-link">Events </a></li>
+              <li><a href="#" class="footer-link">Xchange life </a></li>
+              <li><a href="#" class="footer-link">On display </a></li>
+            </ul>
+          </nav>
+  
+          <div>
+            <nav class="footer__nav">
+              <h3 class="heading">Company</h3>
+              <ul>
+                <li><a href="#" class="footer-link">About us </a></li>
+                <li><a href="#" class="footer-link">careers </a></li>
+                <li><a href="#" class="footer-link">contact us </a></li>
+                <li><a href="#" class="footer-link">terms and condition </a></li>
+                <li><a href="#" class="footer-link">Privacy policies </a></li>
+  
+              </ul>
+            </nav>
+            <h5 class="heading-2">Sign up for our newsletter</h5>
+            <form action="#" class="footer__form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email address" class="footer__input"
+              />
+              <button type="submit" class="footer__submit">Subscribe</button>
+            </form>
+          </div>
+  
+          <nav>
+            <h2 class="heading">Xchange</h2>
+            <ul>
+              <li><a href="#" class="footer-link">Membership </a></li>
+              <li><a href="#" class="footer-link">Xchange life </a></li>
+              <li><a href="#" class="footer-link">xfactor </a></li>
+
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="copywright container">
+          <p>All right reserved. Xchange NG</p>
+  
+          <div class="social-icons">
+            <img src="./img/facebook.svg" alt="" class="icon" />
+            <img src="./img/instagram.svg" alt="" class="icon" />
+            <img src="./img/twitter.svg" alt="" class="icon" />
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custon Script  -->
     <script src="./js/script.js"></script>
 
@@ -45,19 +463,15 @@
     <!-- <script src="./js/jquery/jquery.js" type="text/javascript"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            delay: 3000
-        });
+      AOS.init({
+        duration: 1000,
+        once: true,
+        delay: 3000,
+      });
 
-        $(function () {
-            new WOW().init()
-        })
-
+      $(function () {
+        new WOW().init();
+      });
     </script>
-
-
-</body>
-
+  </body>
 </html>

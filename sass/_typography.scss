@@ -1,0 +1,44 @@
+.btn {
+    background-image: linear-gradient(to right, #f12711, #fd7201);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 163%;
+    border: none;
+    box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+
+    &:hover {
+        color: currentColor;
+        color: #fff;
+        background-image: linear-gradient(to right, #fd7201, #f12711);
+
+    }
+}
+
+
+.heading-1 {
+    font-family: "Playfair Display", serif;
+}
+
+.heading-3 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 117%;
+    margin-top: 0;
+}
+
+.date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #999999;
+  }
