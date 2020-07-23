@@ -534,25 +534,15 @@
             margin-top: 5rem;
             text-align: center;
         }
-    }
-    .mockup-1 {
 
-        @media screen and (max-width: 945px){
-            position: absolute;
-            // left: -500px;
-            // transform: translateX(-30px);
+
+        .mockup-1 {
+            object-fit: scale-down;
+            height: 100%;
+            width: 100%;
+
         }
     }
-    .mockup-2 {
-        position: absolute;
-        transform: scale(0.8);
-        z-index: -10;
-        left: 12.25rem;
-        
-        @media screen and (max-width: 945px){
-            left: 11.25rem;
-            top: 0;
-           
-        }
-    }
+   
+
 }
