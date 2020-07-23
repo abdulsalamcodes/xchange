@@ -271,12 +271,18 @@
         img {
             width: 100%;
             object-fit: cover;
-            height: max-content;
+            height: max-content !important;
         }
 
     }
     &__header {
         position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
     &__story {
         margin-bottom: 2rem;
@@ -503,11 +509,20 @@
     padding-bottom: 5rem;
 
     .download {
-        display: flex;
+        display: grid;
+        // flex-wrap: wrap;
+        grid-template-columns: min-content min-content;
+        column-gap: 1rem;
 
+
+       &__btn {
         @media screen and (max-width: 945px){
-            max-width: 80%;
+            // max-width: 80%;
+            width: 125px;
+            height: 100%;
+            object-fit: cover;
         }
+       }
 
     }
 
@@ -521,15 +536,23 @@
         }
     }
     .mockup-1 {
+
         @media screen and (max-width: 945px){
             position: absolute;
-            left: -500px;
+            // left: -500px;
+            // transform: translateX(-30px);
         }
     }
     .mockup-2 {
         position: absolute;
         transform: scale(0.8);
-        left: 11.25rem;
         z-index: -10;
+        left: 12.25rem;
+        
+        @media screen and (max-width: 945px){
+            left: 11.25rem;
+            top: 0;
+           
+        }
     }
 }
